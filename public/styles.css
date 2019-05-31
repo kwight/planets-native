@@ -6,23 +6,51 @@ body {
 h1, h2, h3 {
     margin: 0;
 }
+h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 1.8;
+}
+h2 {
+    color: white;
+    font-size: 18px;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+hr {
+    border: 1.3px solid #00ccff;
+    float: left;
+    width: 18px;
+}
 header {
     background: linear-gradient(0.25turn, #3366ff, #00ccff);
-    color: white;
     text-align: center;
 }
 main {
     background-color: #736ab7;
+    padding: 40px 24px;
 }
 .planet {
     background-color: #333366;
-    margin: 30px;
+    border-radius: 8px;
+    margin-left: 46px;
+    padding-left: 72px;
 }
-.planet img {
+.planet > img {
     height: auto;
-    position: relative;
-    width: 95px;
+    position: absolute;
+    left: 24px;
+    width: 92px;
 }
 .planet h1 {
     color: white;
+}
+.meta {
+    clear: both;
+}
+.meta img {
+    height: 12px;
+    width: auto;
 }
