@@ -4,7 +4,7 @@ body {
     font: 14px 'Poppins', sans-serif;
     margin: 0;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 h1 {
@@ -23,6 +23,12 @@ h3 {
     font-weight: 400;
     margin-bottom: 2px;
 }
+h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 hr {
     background-color: #00ccff;
     border: 0.5px solid #00ccff;;
@@ -35,6 +41,9 @@ hr {
 img {
     height: auto;
     max-width: 100%;
+}
+article {
+    padding: 0 8px;
 }
 p {
     clear: both;
@@ -52,7 +61,7 @@ main {
 .planet {
     background-color: #333366;
     border-radius: 8px;
-    box-shadow: 0 15px 5px -2px #665ea3;
+    box-shadow: 0 12px 5px -2px #665ea3;
     margin-bottom: 30px;
     margin-left: 46px;
     padding: 21px 21px 21px 75px;
@@ -82,24 +91,39 @@ main {
     width: auto;
 }
 .details {
+    padding: 160px 24px 0;
+}
+.bgimg,
+.gradient {
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.bgimg {
     background-image: url('https://c1.staticflickr.com/9/8105/8497927473_2845ae671e_b.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    padding: 150px 24px 0;
+    top: 0;
+}
+.gradient {
+    background: linear-gradient(transparent, #736ab7);
+    height: 155px;
+    top: 146px;
 }
 .details .planet {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
     margin-left: inherit;
     padding-left: inherit;
     padding-top: 48px;
 }
 .details .planet > img {
     left: inherit;
-    top: -50px;
+    top: -55px;
 }
 .details .meta-container {
     justify-content: space-between;
