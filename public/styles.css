@@ -1,4 +1,5 @@
 body {
+    background-color: #736ab7;
     color: #b6b2df;
     font: 14px 'Poppins', sans-serif;
     margin: 0;
@@ -31,6 +32,13 @@ hr {
     margin-bottom: 9px;
     width: 16px;
 }
+img {
+    height: auto;
+    max-width: 100%;
+}
+p {
+    clear: both;
+}
 span {
     font-size: 9px;
 }
@@ -39,7 +47,6 @@ header {
     text-align: center;
 }
 main {
-    background-color: #736ab7;
     padding: 40px 24px;
 }
 .planet {
@@ -73,4 +80,31 @@ main {
     height: 12px;
     margin-right: 9px;
     width: auto;
+}
+.details {
+    background-image: url('https://c1.staticflickr.com/9/8105/8497927473_2845ae671e_b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 150px 24px 0;
+}
+.details .planet {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: inherit;
+    padding-left: inherit;
+    padding-top: 48px;
+}
+.details .planet > img {
+    left: inherit;
+    top: -50px;
+}
+.details .meta-container {
+    justify-content: space-between;
+    width: 160px;
+}
+.details .meta {
+    flex-grow: inherit;
 }
